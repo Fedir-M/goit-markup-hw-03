@@ -89,9 +89,10 @@ img {
 
 /* hiden title */
 .visually-hidden {
-	opacity: 0;
+	visibility: hidden;
+	/* opacity: 0;
 	width: 0;
-	height: 0;
+	height: 0; */
 }
 
 /* HEADER */
@@ -251,8 +252,8 @@ img {
 	max-width: 264px;
 	margin-right: 24px;
 
-	width: calc((100% - 3 * 24px) / 4);
-
+	width: calc((100% - 72px) / 4);
+/* width calc((100% - 3 * 24px) / 4) */
 }
 
 .features__item:last-child) {
@@ -267,6 +268,7 @@ img {
 	font-weight: 500;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
+	margin-bottom: 8px;
 }
 
 .features-text {
@@ -461,12 +463,13 @@ section {
 .button-filter:focus {
 	color: var(--hover-button-text);
 	background-color: var(--hover-button-color);
+	border: 1px solid transparent;
 }
 
 .button-filter:active {
 	color: var(--hover-button-text);
 	background-color: var(--pressed-button-color);
-	border: 1px solid transparent;
+	
 }
 
 /* PORTFOLIO FIELDS */
