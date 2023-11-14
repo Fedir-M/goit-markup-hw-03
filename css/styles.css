@@ -89,10 +89,22 @@ img {
 
 /* hiden title */
 .visually-hidden {
-	visibility: hidden;
+	/* visibility: hidden; */
 	/* opacity: 0;
 	width: 0;
 	height: 0; */
+
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+				
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 /* HEADER */
@@ -246,13 +258,14 @@ img {
 
 .features__list {
 	display: flex;
+	width: calc((100% - 72px) / 4);
 }
 
 .features__item {
 	max-width: 264px;
 	margin-right: 24px;
 
-	width: calc((100% - 72px) / 4);
+	/* width: calc((100% - 72px) / 4); */
 /* width calc((100% - 3 * 24px) / 4) */
 }
 
