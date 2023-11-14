@@ -258,18 +258,18 @@ img {
 
 .features__list {
 	display: flex;
-	width: calc((100% - 72px) / 4);
+	
 }
 
 .features__item {
 	max-width: 264px;
 	margin-right: 24px;
 
-	/* width: calc((100% - 72px) / 4); */
+	width: calc((100% - 72px) / 4);
 /* width calc((100% - 3 * 24px) / 4) */
 }
 
-.features__item:last-child) {
+.features__item:last-child {
 	margin-right: 0;
 }
 
